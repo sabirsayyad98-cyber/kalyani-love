@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffb6cf">
+<title>For Kalyani ❤️</title>
+<style>
+:root{--pink:#ff4f91;--deep:#b51e62;--cream:#fff8fb;--ink:#54233a}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:radial-gradient(circle at top,#fff7fb 0,#ffd7e6 48%,#ffafce 100%);overflow-x:hidden}
+main{min-height:100svh;display:grid;place-items:center;padding:22px;position:relative;z-index:1}
+.card{width:min(100%,520px);background:#ffffffd9;border:1px solid #fff;box-shadow:0 20px 70px #a5285b24;border-radius:28px;padding:clamp(24px,6vw,42px);text-align:center;backdrop-filter:blur(10px);animation:appear .8s ease both}
+h1{font-size:clamp(2rem,8vw,3.2rem);margin:8px 0 14px;color:var(--deep)}
+h2{font-size:clamp(1.55rem,6vw,2.2rem);color:var(--deep);margin:8px 0 16px}
+p{font-size:1.08rem;line-height:1.75;margin:12px 0}
+.small{font-size:.9rem;opacity:.78}
+.heart-big{font-size:3.5rem;animation:pulse 1.5s infinite}
+.btn{border:0;border-radius:999px;padding:14px 23px;margin:8px 4px;background:linear-gradient(135deg,#ff6aa6,#e52d79);color:white;font-size:1rem;font-weight:bold;box-shadow:0 8px 20px #e52d7935;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn.secondary{background:#fff;color:var(--deep);border:1px solid #ffc0d7;box-shadow:none}
+.screen{display:none}.screen.active{display:block;animation:appear .65s ease both}
+.envelope{font-size:6rem;display:block;margin:12px auto;filter:drop-shadow(0 10px 8px #9b28552b);animation:bob 2s ease-in-out infinite}
+.letter{background:#fffafc;border:1px solid #ffd0e1;border-radius:18px;padding:22px;text-align:left;white-space:normal}
+.shayari{font-style:italic;text-align:center;color:#79274c}
+.choices{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+footer{margin-top:20px;font-size:.78rem;opacity:.65}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float-heart{position:absolute;bottom:-40px;animation:rise linear forwards;opacity:.7}
+@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+@keyframes appear{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes pulse{50%{transform:scale(1.13)}}
+@keyframes bob{50%{transform:translateY(-9px) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+<audio id="bgMusic" preload="auto" loop>
+  <source src="alfaaz-clip.mp3" type="audio/mpeg">
+</audio>
+<main>
+  <section class="card screen active" id="welcomeScreen">
+    <div class="heart-big">💗</div>
+    <p class="small">A little surprise, made just for you</p>
+    <h1>Hey, Kalyani ❤️</h1>
+    <p>Mere dil mein tumhare liye kuch khaas alfaaz hain…</p>
+    <button class="btn" onclick="startSurprise()">Open Your Surprise ✨</button>
+    <p class="small">Jab tum ready ho, tabhi aage badhna 😊</p>
+  </section>
+
+  <section class="card screen" id="envelopeScreen">
+    <h2>Tumhare liye ek chhota sa khat 💌</h2>
+    <span class="envelope">💌</span>
+    <p>Is khat mein woh baat hai jo main tumse kehna chahta hoon.</p>
+    <button class="btn" onclick="showScreen('letterScreen')">Khat kholo 💖</button>
+  </section>
+
+  <section class="card screen" id="letterScreen">
+    <h2>Dil se, Kalyani ke liye 💗</h2>
+    <div class="letter">
+      <p class="shayari">
+        पता नहीं इसे प्यार कहूँ या पहली नज़र का जादू, लेकिन तुम्हें पहली बार देखा था, तभी से तुम मुझे बहुत प्यारी लगने लगी। 🥹❤️
+        <br><br>
+        कल्याणी, शायद तुम्हें पता भी नहीं होगा कि कोई है जो हर दिन बस स्टैंड पर सिर्फ़ तुम्हारी एक झलक पाने का इंतज़ार करता है। तुम्हें दूर से देख लेना ही मेरे चेहरे पर मुस्कान लाने के लिए काफी है। 🫶🏻💗
+        <br><br>
+        तुमसे कोई शिकायत नहीं, तुमसे कोई उम्मीद भी नहीं… बस तुम्हें देखना अच्छा लगता है। तुम्हारी एक झलक मेरे साधारण से दिन को भी खास बना देती है। 🌷✨
+        <br><br>
+        पता नहीं कभी तुम मेरे इन एहसासों को समझ पाओगी या नहीं, लेकिन इतना जानता हूँ कि तुम्हें पसंद करना मेरे दिल का सबसे खूबसूरत एहसास है। ❤️
+        <br><br>
+        शायद तुम मेरे लिए बस एक चेहरा हो जिसे मैं रोज़ देखता हूँ, लेकिन मेरे लिए तुम्हारी एक झलक पूरे दिन की सबसे प्यारी याद बन जाती है। 🥹💕
+        <br><br>
+        तुम्हें दूर से चाहने वाला कोई… 💌🌹
+      </p>
+    </div>
+    <button class="btn" onclick="showScreen('proposalScreen')">Ek baat poochun? 🌹</button>
+  </section>
+
+  <section class="card screen" id="proposalScreen">
+    <div class="heart-big">🌹</div>
+    <p class="small">Ek sachche dil se poochha gaya sawaal…</p>
+    <h1>Kalyani, will you give us a chance? ❤️</h1>
+    <p>Main tumhe jaanne aur samajhne ka mauka chahta hoon. Koi pressure nahi — tum jo bhi jawab dogi, main uski izzat karunga.</p>
+    <div class="choices">
+      <button class="btn" onclick="showScreen('yesScreen'); celebrate()">Haan, let's try 💖</button>
+      <button class="btn secondary" onclick="showScreen('thinkScreen')">Mujhe sochne do 🌷</button>
+    </div>
+  </section>
+
+  <section class="card screen" id="yesScreen">
+    <div class="heart-big">💞</div>
+    <h1>Thank you, Kalyani!</h1>
+    <p>Tumhare jawab ke liye dil se shukriya. Chalo, dheere-dheere ek doosre ko aur achhe se jaante hain. ✨</p>
+    <p class="small">Made with care, just for you ❤️</p>
+  </section>
+
+  <section class="card screen" id="thinkScreen">
+    <div class="heart-big">🌸</div>
+    <h2>Koi jaldi nahi, Kalyani</h2>
+    <p>Aaram se sochna. Tumhari feelings aur tumhara decision mere liye important hai. Jab comfortable ho, tab baat kar lena. ❤️</p>
+    <button class="btn secondary" onclick="showScreen('welcomeScreen')">Phir se dekho ↺</button>
+  </section>
+</main>
+<script>
+const music = document.getElementById('bgMusic');
+function startSurprise(){
+  music.volume = 0.55;
+  music.play().catch(()=>{});
+  showScreen('envelopeScreen');
+}
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+function createHeart(){
+  const holder=document.getElementById('hearts');
+  const h=document.createElement('span');
+  h.className='float-heart';
+  h.textContent=['♥','♡','💗','💕'][Math.floor(Math.random()*4)];
+  h.style.left=Math.random()*100+'%';
+  h.style.fontSize=(14+Math.random()*20)+'px';
+  h.style.animationDuration=(6+Math.random()*6)+'s';
+  holder.appendChild(h);
+  setTimeout(()=>h.remove(),12500);
+}
+setInterval(createHeart,650);
+function celebrate(){for(let i=0;i<24;i++)setTimeout(createHeart,i*90)}
+</script>
+</body>
+</html>
